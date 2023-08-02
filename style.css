@@ -31,7 +31,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header{
-    background-color: #000;
+    background-color: #00000000;
+    opacity: 50;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -39,6 +40,8 @@ body::-webkit-scrollbar-thumb {
     padding-top: 50px;
     padding-left: 3%;
     padding-right: 3%;
+    z-index: 5;
+    position: relative;
 }
 
 .header .logo{
@@ -174,21 +177,39 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+
+video {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .indexContainer {
 
   display: flex;
   flex-direction: column;
-
   justify-content: center;
+  position: relative;
 
-
+  
   height: 87vh;
-  background-color: black;
+  background-color: white;
+}
+
+.indexItem {
+
+  position: relative;
+  z-index: 3;
+
 }
 
 .indexContainer h1 {
 
   color: white;
+  position: relative;
+  z-index: 2;
   font-size: 100px;
   font-weight: 600;
 
@@ -196,14 +217,17 @@ body::-webkit-scrollbar-thumb {
 
 .indexContainer .firstPoint {
   padding-left: 32%;
+  z-index: 3;
 }
 
 .indexContainer .secondPoint {
   padding-left: 25%;
+  z-index: 3;
 }
 
 .indexContainer .thirdPoint {
   padding-left: 40%;
+  z-index: 3;
 }
 
 .indexContainer .infoWinners {
@@ -215,6 +239,8 @@ body::-webkit-scrollbar-thumb {
   right: 100px;
   font-size: 18px;
   font-weight: 300;
+
+  z-index: 3;
 }
 
 
@@ -298,7 +324,7 @@ body::-webkit-scrollbar-thumb {
 .blobSVG {
   position: absolute;
   width: 50%;
-  top: 100px;
+  top: -200px;
   left: 70%;
 }
 
