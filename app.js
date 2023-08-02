@@ -95,3 +95,66 @@ gsap.to(".hero__image", {
   },
   y: "-30%"
 });
+
+let delSections = document.querySelectorAll(".delayed-section");
+
+delSections.forEach(section => {
+  
+  let imageAnim = gsap.to(section.querySelector("img"), {
+    y: "-80vh",
+    ease: "none",
+    paused: true
+  });
+  
+  let progressTo = gsap.quickTo(imageAnim, "progress", {ease: "power3", duration: parseFloat(section.dataset.scrub) || 0.1});
+  
+  gsap.to(section.querySelector(".innerContainer"), {
+    y: "100vh",
+    ease: "none",
+    scrollTrigger: {
+      scrub: true,
+      trigger: section,
+      start: "top bottom",
+      end: "bottom top",
+      onUpdate: self => progressTo(self.progress)
+    }
+  });
+
+});
+
+function portfolio() {
+  gsap.from('.work__item, .work__item-num', {
+    y: (i, el) => (1 - parseFloat(el.getAttribute('data-speed'))),
+    scrollTrigger: {
+      trigger: '.work',
+      start: 'top bottom',
+      scrub: 1.9
+    }
+  })
+  gsap.from('.work__item-img img', {
+    scale: 1.6,
+    scrollTrigger: {
+      trigger: '.work__wrapp',
+      start: 'top bottom',
+      scrub: 1.9
+    }
+  })
+}
+portfolio();
+
+
+
+function footer() {
+  gsap.from('.footer__div span', {
+    y: (i, el) => (1 - parseFloat(el.getAttribute('data-speed'))),
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '.footer',
+      start: 'top bottom',
+      end: 'bottom bottom',
+      scrub: 1.9
+    }
+  })
+}
+footer();
+
