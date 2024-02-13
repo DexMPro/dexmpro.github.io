@@ -1,0 +1,65 @@
+body {
+
+    background-color: pink;
+
+}
+
+.contenedorHijo {
+
+    background-color: rgb(255, 75, 105);
+    border-radius: 40px;
+    
+    width: 750px;
+    height: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10vh auto;
+    flex-direction: column;
+
+}
+
+.botonSi {
+
+    background-color: rgb(11, 255, 11);
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    
+
+}
+
+.botonNo {
+
+    background-color: red;
+    padding: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 15px;
+    color: white;
+
+}
+
+.contenedorHijo2 {
+
+    margin-top: 30px;
+
+}
+
+.contenedorHijo h2, h1 {
+
+    color: white;
+    text-align: center;
+
+}
+
+.contenedorHijo p {
+
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    
+    }
