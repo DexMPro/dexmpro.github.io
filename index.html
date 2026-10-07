@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Tunjano | Desarrollador Web</title>
+    <meta name="description" content="Portafolio de Miguel Tunjano, desarrollador de aplicaciones y sitios web en Bogotá, Colombia. PHP, JavaScript, React, Node.js y MySQL.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+
+    <!-- ===== NAVEGACIÓN ===== -->
+    <header class="header" id="header">
+        <a href="#inicio" class="logo">&lt;MT/&gt;</a>
+
+        <nav class="nav" id="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="redesSociales">
+            <a href="https://www.linkedin.com/in/m-tunjano" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <!-- Cambia el enlace por tu Instagram -->
+            <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <!-- Cambia el enlace por tu GitHub -->
+            <a href="#" target="_blank" rel="noopener" aria-label="GitHub">
+                <img src="github.png" alt="GitHub">
+            </a>
+        </div>
+
+        <button class="menuToggle" id="menuToggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="main-container" id="inicio">
+
+        <div class="welcomePort">
+            <div class="circuloWelcome"></div>
+            <h2>Bienvenido a mi portafolio 2026</h2>
+        </div>
+
+        <div class="hero-grid">
+            <div class="webDeveloper">
+                <span class="openToWork">● Open To Work</span>
+                <h3>/* MIGUEL TUNJANO */</h3>
+                <h1>DESARROLLADOR <span class="accent">WEB</span></h1>
+                <p class="typedLine"><span id="typed"></span></p>
+
+                <div class="hero-buttons">
+                    <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                    <!-- Pon tu CV en la carpeta con este nombre -->
+                    <a href="CV-Miguel-Tunjano.pdf" class="btn btn-outline" download>Descargar CV</a>
+                </div>
+            </div>
+
+            <div class="contenedor">
+                <div class="cubo">
+                    <div class="lado"></div>
+                    <div class="lado"></div>
+                    <div class="lado"></div>
+                    <div class="lado"></div>
+                    <div class="lado"></div>
+                    <div class="lado"></div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#sobre-mi" class="scrollDown" aria-label="Bajar">↓</a>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="section" id="sobre-mi">
+        <h2 class="section-title"><span>01.</span> Mi trabajo y sobre mí</h2>
+
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <p>
+                    Soy desarrollador de aplicaciones y sitios web, enfocado en crear soluciones digitales
+                    <strong>eficientes, escalables y orientadas a las necesidades del negocio</strong>.
+                </p>
+                <p>
+                    He desarrollado e implementado soluciones para empresas de distintos países y sectores,
+                    lo que me ha enseñado a adaptarme a diferentes entornos, metodologías y requerimientos.
+                    Me caracterizo por trabajar bien en equipos multidisciplinarios, coordinar proyectos y
+                    comunicarme de forma clara con todas las áreas.
+                </p>
+                <p>
+                    Me apasiona la evolución tecnológica y mantengo una actitud de aprendizaje continuo.
+                    Actualmente curso el Tecnólogo en Desarrollo de Software en la Escuela Tecnológica
+                    Instituto Técnico Central.
+                </p>
+            </div>
+
+            <div class="stats reveal">
+                <div class="stat">
+                    <span class="stat-num">3+</span>
+                    <span class="stat-label">años desarrollando</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">1.º</span>
+                    <span class="stat-label">mejor eCommerce · Premios Latam Digital</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">2.º</span>
+                    <span class="stat-label">lugar ARTICS 2019 · desarrollo web</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-num">4+</span>
+                    <span class="stat-label">países y sectores atendidos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCIA ===== -->
+    <section class="section" id="experiencia">
+        <h2 class="section-title"><span>02.</span> Experiencia</h2>
+
+        <div class="timeline">
+            <article class="timeline-item reveal">
+                <div class="timeline-date">2025 — 2026</div>
+                <div class="timeline-card">
+                    <h3>Desarrollador de Aplicación Web</h3>
+                    <h4>Carpediem</h4>
+                    <ul>
+                        <li>Diseño y desarrollo de una aplicación web en PHP para la gestión integral de una fundación, automatizando procesos administrativos y clínicos.</li>
+                        <li>Base de datos estructurada para pacientes, historias clínicas y seguimiento de su evolución, con información segura y trazable.</li>
+                        <li>Módulo de administración de contenido que agiliza la actualización y consulta de información institucional.</li>
+                        <li>La plataforma fue solicitada, adaptada e implementada por otras empresas del mismo sector.</li>
+                    </ul>
+                    <div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+                </div>
+            </article>
+
+            <article class="timeline-item reveal">
+                <div class="timeline-date">2021 — 2023</div>
+                <div class="timeline-card">
+                    <h3>Desarrollador Web</h3>
+                    <h4>Cances Studio Creativo</h4>
+                    <ul>
+                        <li>Diseño y desarrollo de aplicaciones junto al equipo creativo, creando soluciones digitales atractivas y personalizadas.</li>
+                        <li>Primer lugar como mejor página eCommerce en los 9.º Premios Latam Digital junto a Cances.</li>
+                        <li>Seguimiento de proyectos y coordinación entre áreas para cumplir plazos y mantener buena comunicación con clientes.</li>
+                        <li>Clientes: Speyside, Eternal Supplies, Tomacol y Mamatúbela.</li>
+                    </ul>
+                    <div class="tags"><span>WordPress</span><span>eCommerce</span><span>HTML/CSS</span><span>JS</span></div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="section" id="proyectos">
+        <h2 class="section-title"><span>03.</span> Proyectos</h2>
+
+        <div class="projects-grid">
+            <article class="project-card featured reveal">
+                <div class="project-top">
+                    <span class="project-label">Proyecto destacado</span>
+                    <span class="project-year">2025</span>
+                </div>
+                <h3>Plataforma Carpediem</h3>
+                <p>
+                    Sistema web para fundaciones: registro de pacientes, historias clínicas, seguimiento de evolución
+                    y gestor de contenido institucional. Hoy lo usan varias organizaciones del sector.
+                </p>
+                <div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+                <a href="https://plataformacarpediem.us/" target="_blank" rel="noopener" class="project-link">Ver plataforma ↗</a>
+            </article>
+
+            <article class="project-card reveal">
+                <div class="project-top">
+                    <span class="project-label">eCommerce · Premiado</span>
+                    <span class="project-year">2021–2023</span>
+                </div>
+                <h3>Tiendas online con Cances</h3>
+                <p>
+                    Desarrollo de sitios y tiendas para marcas como Mamatúbela, Speyside, Eternal Supplies y Tomacol.
+                    Ganador del 1.er lugar a mejor eCommerce en los Premios Latam Digital.
+                </p>
+                <div class="tags"><span>WordPress</span><span>WooCommerce</span><span>UX</span></div>
+            </article>
+
+            <article class="project-card reveal">
+                <div class="project-top">
+                    <span class="project-label">Competencia</span>
+                    <span class="project-year">2022</span>
+                </div>
+                <h3>ARTICS — Desarrollo web</h3>
+                <p>
+                    Segundo lugar en la competencia distrital ARTICS, categoría desarrollo web, resolviendo un
+                    reto técnico bajo tiempo limitado.
+                </p>
+                <div class="tags"><span>HTML/CSS</span><span>JavaScript</span></div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="section" id="habilidades">
+        <h2 class="section-title"><span>04.</span> Habilidades</h2>
+
+        <div class="skills-grid">
+            <div class="skill-group reveal">
+                <h3>Frontend</h3>
+                <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>WordPress</span></div>
+            </div>
+            <div class="skill-group reveal">
+                <h3>Backend y datos</h3>
+                <div class="chips"><span>PHP</span><span>Java</span><span>Node.js</span><span>MySQL</span><span>APIs REST</span></div>
+            </div>
+            <div class="skill-group reveal">
+                <h3>Herramientas y gestión</h3>
+                <div class="chips"><span>Git</span><span>Jira</span><span>SCRUM</span><span>Gestión de proyectos digitales</span></div>
+            </div>
+            <div class="skill-group reveal">
+                <h3>Idiomas</h3>
+                <div class="chips"><span>Español nativo</span><span>Inglés conversacional</span></div>
+            </div>
+        </div>
+
+        <h3 class="sub-title reveal">Formación</h3>
+        <div class="edu-grid">
+            <div class="edu-card reveal">
+                <span class="edu-date">2023 — 2027</span>
+                <h4>Tecnólogo en Desarrollo de Software</h4>
+                <p>Escuela Tecnológica Instituto Técnico Central</p>
+            </div>
+            <div class="edu-card reveal">
+                <span class="edu-date">2022</span>
+                <h4>Desarrollo de Software · Fundamentos de Programación</h4>
+                <p>Universidad Autónoma de Bucaramanga</p>
+            </div>
+            <div class="edu-card reveal">
+                <span class="edu-date">2019 — 2020</span>
+                <h4>Técnico en Programación de Software</h4>
+                <p>SENA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section contact" id="contacto">
+        <h2 class="section-title"><span>05.</span> Contacto</h2>
+        <div class="contact-box reveal">
+            <h3>¿Tienes un proyecto o una vacante?</h3>
+            <p>Estoy disponible para nuevas oportunidades. Escríbeme y hablamos.</p>
+            <div class="contact-links">
+                <a href="mailto:dexholos@hotmail.com" class="btn btn-primary">dexholos@hotmail.com</a>
+                <a href="https://wa.me/573138809453" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
+                <a href="https://www.linkedin.com/in/m-tunjano" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+            </div>
+            <p class="location">📍 Bogotá, Colombia</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Miguel Tunjano · Hecho con HTML, CSS y JS</p>
+    </footer>
+
+</body>
+</html>
